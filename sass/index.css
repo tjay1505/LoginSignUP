@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-bg: linear-gradient(220deg,rgb(254, 20, 254),rgb(0, 209, 251));
+  --text-pri:black;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: var(--main-bg);
+  display: grid;
+  place-items: center;
+}
+
+.outCard {
+  width: 90%;
+  height: 85%;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.outCard h1 {
+  margin: 10% 0;
+}
+.outCard .label {
+  height: 10vh;
+  width: 80%;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.outCard .label p {
+  width: 90%;
+  padding: 2%;
+}
+.outCard .label .in-wrap {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outCard .label .in-wrap img {
+  width: 20px;
+}
+.outCard .label .in-wrap input {
+  width: 80%;
+  border: none;
+  padding: 2% 3%;
+}
+.outCard .label .in-wrap input:focus {
+  outline: none;
+}
+
+.label-2 {
+  width: 80%;
+  height: 5vh;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.btn {
+  margin: 5% 0;
+  width: 80%;
+  height: 5vh;
+  border-radius: 50px;
+  border: none;
+  background: var(--main-bg);
+}
+
+.imgs {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.imgs img {
+  width: 30px;
+}
+
+.final {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+}
+.final p {
+  margin-top: 2%;
+}
+
+@media (min-width: 700px) {
+  .outCard {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .outCard {
+    width: 30%;
+  }
+}/*# sourceMappingURL=index.css.map */

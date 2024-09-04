@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/index.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="outCard">
+        <h1>Login</h1>
+        <div class="label">
+            <p>username</p>
+            <div class="in-wrap">
+                <img src="./asset/user.png" alt="">
+                <input type="text" placeholder="type your username" id="user" >
+            </div>
+        </div>
+
+        <div class="label">
+            <p>password</p>
+            <div class="in-wrap">
+                <img src="./asset/padlock.png" alt="">
+                <input type="text" placeholder="type your password" id="pass">
+            </div>
+        </div>
+        <div class="label-2">
+            forgot password
+        </div>
+
+        <button class="btn" onclick="getData()" >Login</button>
+        <p>or signUp using</p>
+        <div class="imgs">
+            <img src="./asset/facebook.png" alt="">
+            <img src="./asset/github.png" alt="">
+            <img src="./asset/instagram.png" alt="">
+        </div>
+
+        <div class="final">
+            <p>or signup using</p>
+            <p>signUp</p>
+        </div>
+
+    </div>
+
+    <script>
+        const user = document.getElementById('user')
+        const pass = document.getElementById('pass')
+        let data = []
+         function getData(){
+            data.push(user.value)
+            data.push(pass.value)
+            console.log(data);
+            
+         }
+
+    </script>
+</body>
+</html>
